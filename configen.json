@@ -1,0 +1,57 @@
+{
+    "configen": {
+        "version": "4",
+        "sources": [
+            {
+                "id": "agent",
+                "path": "src/agent/golang/code",
+                "r": true
+            },
+            {
+                "id": "main",
+                "path": "src/main/golang/code",
+                "r": true
+            },
+            {
+                "id": "server",
+                "path": "src/server/golang/code",
+                "r": true
+            },
+            {
+                "id": "test",
+                "path": "src/test/golang/code",
+                "r": true
+            }
+        ],
+        "destinations": [
+            {
+                "id": "agent",
+                "path": "gen/agent4cbs",
+                "sources": [
+                    "agent"
+                ]
+            },
+            {
+                "id": "main",
+                "path": "gen/main4cbs",
+                "sources": [
+                    "main"
+                ]
+            },
+            {
+                "id": "server",
+                "path": "gen/server4cbs",
+                "sources": [
+                    "server"
+                ]
+            },
+            {
+                "id": "test",
+                "path": "gen/test4cbs",
+                "sources": [
+                    "test"
+                ]
+            }
+        ]
+    }
+}
